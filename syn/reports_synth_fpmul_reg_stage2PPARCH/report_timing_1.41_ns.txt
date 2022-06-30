@@ -1,0 +1,74 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Nov 23 14:40:07 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I2/SIG_in_reg[27]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I3/SIG_out_round_reg[26]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I2/SIG_in_reg[27]/CK (DFF_X1)                           0.00       0.00 r
+  I2/SIG_in_reg[27]/Q (DFF_X1)                            0.08       0.08 f
+  U334/ZN (OAI22_X1)                                      0.07       0.15 r
+  I3/I11/add_45/A[0] (FPmul_DW01_inc_0)                   0.00       0.15 r
+  I3/I11/add_45/U1_1_1/CO (HA_X1)                         0.07       0.22 r
+  I3/I11/add_45/U1_1_2/CO (HA_X1)                         0.06       0.28 r
+  I3/I11/add_45/U1_1_3/CO (HA_X1)                         0.06       0.34 r
+  I3/I11/add_45/U1_1_4/CO (HA_X1)                         0.06       0.39 r
+  I3/I11/add_45/U1_1_5/CO (HA_X1)                         0.06       0.45 r
+  I3/I11/add_45/U1_1_6/CO (HA_X1)                         0.06       0.51 r
+  I3/I11/add_45/U1_1_7/CO (HA_X1)                         0.06       0.57 r
+  I3/I11/add_45/U1_1_8/CO (HA_X1)                         0.06       0.63 r
+  I3/I11/add_45/U1_1_9/CO (HA_X1)                         0.06       0.68 r
+  I3/I11/add_45/U1_1_10/CO (HA_X1)                        0.06       0.74 r
+  I3/I11/add_45/U1_1_11/CO (HA_X1)                        0.06       0.80 r
+  I3/I11/add_45/U1_1_12/CO (HA_X1)                        0.06       0.86 r
+  I3/I11/add_45/U1_1_13/CO (HA_X1)                        0.06       0.91 r
+  I3/I11/add_45/U1_1_14/CO (HA_X1)                        0.06       0.98 r
+  I3/I11/add_45/U1_1_15/CO (HA_X1)                        0.06       1.03 r
+  I3/I11/add_45/U1/ZN (AND2_X2)                           0.04       1.08 r
+  I3/I11/add_45/U1_1_19/CO (HA_X1)                        0.05       1.13 r
+  I3/I11/add_45/U9/ZN (AND2_X1)                           0.04       1.17 r
+  I3/I11/add_45/U1_1_21/CO (HA_X1)                        0.06       1.23 r
+  I3/I11/add_45/U1_1_22/CO (HA_X1)                        0.06       1.29 r
+  I3/I11/add_45/U11/ZN (XNOR2_X1)                         0.03       1.32 f
+  I3/I11/add_45/SUM[23] (FPmul_DW01_inc_0)                0.00       1.32 f
+  I3/SIG_out_round_reg[26]/U4/Z (MUX2_X1)                 0.06       1.38 f
+  I3/SIG_out_round_reg[26]/D (DFF_X1)                     0.01       1.39 f
+  data arrival time                                                  1.39
+
+  clock MY_CLK (rise edge)                                1.41       1.41
+  clock network delay (ideal)                             0.00       1.41
+  clock uncertainty                                      -0.07       1.34
+  I3/SIG_out_round_reg[26]/CK (DFF_X1)                    0.00       1.34 r
+  library setup time                                     -0.04       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+1

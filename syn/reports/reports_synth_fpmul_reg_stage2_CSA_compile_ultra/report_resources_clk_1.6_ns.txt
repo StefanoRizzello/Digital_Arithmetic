@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Dec  7 23:21:28 2021
+****************************************
+
+
+Resource Report for this hierarchy in file
+        ../hdl/src/common/fpmul_stage1_struct.vhd
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| mult_x_19      | DW02_mult      | A_width=32 | I2/mult_156 (fpmul_stage2_struct_reg.vhd:156) |
+               | B_width=32 |                            |
+| add_x_20       | DW01_add       | width=8    | I3/I9/add_41_aco (fpnormalize_fpnormalize.vhd:41) |
+| add_x_22       | DW01_inc       | width=25   | I3/I11/add_45 (fpround_fpround.vhd:45) |
+| add_x_27       | DW01_add       | width=8    | I4/I1/add_41_aco (fpnormalize_fpnormalize.vhd:41) |
+| DP_OP_46J1_122_7756             |            |                            |
+|                | DP_OP_46J1_122_7756 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_46J1_122_7756
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_46J1_122_7756  | I2/add_148 (fpmul_stage2_struct_reg.vhd:148)        |
+|                      | I2/add_148_2 (fpmul_stage2_struct_reg.vhd:148)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 8     |                                          |
+| I2    | PI   | Unsigned | 8     |                                          |
+| O1    | PO   | Unsigned | 9     | I1 + I2 + $unsigned(1'b1) (fpmul_stage2_struct_reg.vhd:148) |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_x_19          | DW02_mult        | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix8              |
+| add_x_20           | DW01_add         | apparch (area)     |                |
+| add_x_22           | DW01_inc         | apparch (area)     |                |
+| add_x_27           | DW01_add         | apparch (area)     |                |
+| DP_OP_46J1_122_7756                   |                    |                |
+|                    | DP_OP_46J1_122_7756 | str (area)      |                |
+===============================================================================
+
+1

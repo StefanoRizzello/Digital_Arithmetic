@@ -1,0 +1,95 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Dec  7 22:04:05 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[22]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/SIG_in_reg[20]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[22]/CK (DFF_X1)                            0.00       0.00 r
+  I1/B_SIG_reg[22]/Q (DFF_X1)                             0.08       0.08 f
+  I2/mult_134/B[22] (FPmul_DW02_mult_0)                   0.00       0.08 f
+  I2/mult_134/U90/ZN (AND2_X1)                            0.04       0.13 f
+  I2/mult_134/S0_21/CO (FA_X1)                            0.10       0.23 f
+  I2/mult_134/S2_2_21/S (FA_X1)                           0.14       0.37 r
+  I2/mult_134/S2_3_20/S (FA_X1)                           0.11       0.48 f
+  I2/mult_134/S2_4_19/S (FA_X1)                           0.13       0.62 r
+  I2/mult_134/S2_5_18/S (FA_X1)                           0.11       0.73 f
+  I2/mult_134/S2_6_17/CO (FA_X1)                          0.09       0.82 f
+  I2/mult_134/S2_7_17/CO (FA_X1)                          0.11       0.93 f
+  I2/mult_134/S2_8_17/CO (FA_X1)                          0.11       1.04 f
+  I2/mult_134/S2_9_17/CO (FA_X1)                          0.11       1.14 f
+  I2/mult_134/S2_10_17/CO (FA_X1)                         0.11       1.25 f
+  I2/mult_134/S2_11_17/CO (FA_X1)                         0.11       1.35 f
+  I2/mult_134/S2_12_17/CO (FA_X1)                         0.11       1.46 f
+  I2/mult_134/S2_13_17/CO (FA_X1)                         0.11       1.56 f
+  I2/mult_134/S2_14_17/CO (FA_X1)                         0.11       1.67 f
+  I2/mult_134/S2_15_17/CO (FA_X1)                         0.11       1.78 f
+  I2/mult_134/S2_16_17/CO (FA_X1)                         0.11       1.88 f
+  I2/mult_134/S2_17_17/CO (FA_X1)                         0.11       1.99 f
+  I2/mult_134/S2_18_17/CO (FA_X1)                         0.11       2.09 f
+  I2/mult_134/S2_19_17/S (FA_X1)                          0.14       2.23 r
+  I2/mult_134/S2_20_16/S (FA_X1)                          0.11       2.35 f
+  I2/mult_134/S2_21_15/S (FA_X1)                          0.13       2.48 r
+  I2/mult_134/S2_22_14/S (FA_X1)                          0.11       2.59 f
+  I2/mult_134/S2_23_13/S (FA_X1)                          0.14       2.73 r
+  I2/mult_134/U438/Z (XOR2_X1)                            0.08       2.81 r
+  I2/mult_134/U395/Z (XOR2_X1)                            0.08       2.89 r
+  I2/mult_134/U350/Z (XOR2_X1)                            0.08       2.97 r
+  I2/mult_134/U311/Z (XOR2_X1)                            0.08       3.05 r
+  I2/mult_134/U265/Z (XOR2_X1)                            0.08       3.13 r
+  I2/mult_134/U229/Z (XOR2_X1)                            0.08       3.21 r
+  I2/mult_134/U190/Z (XOR2_X1)                            0.08       3.29 r
+  I2/mult_134/U161/Z (XOR2_X1)                            0.08       3.37 r
+  I2/mult_134/U153/Z (XOR2_X1)                            0.08       3.45 r
+  I2/mult_134/FS_1/A[34] (FPmul_DW01_add_5)               0.00       3.45 r
+  I2/mult_134/FS_1/U44/ZN (OR2_X2)                        0.05       3.50 r
+  I2/mult_134/FS_1/U24/ZN (AND2_X1)                       0.05       3.54 r
+  I2/mult_134/FS_1/U25/ZN (AND3_X2)                       0.05       3.59 r
+  I2/mult_134/FS_1/U29/ZN (NAND3_X1)                      0.03       3.63 f
+  I2/mult_134/FS_1/U28/ZN (AND2_X1)                       0.04       3.66 f
+  I2/mult_134/FS_1/U105/ZN (NAND2_X1)                     0.03       3.69 r
+  I2/mult_134/FS_1/U111/ZN (AOI21_X1)                     0.03       3.72 f
+  I2/mult_134/FS_1/U125/ZN (XNOR2_X1)                     0.05       3.77 f
+  I2/mult_134/FS_1/SUM[38] (FPmul_DW01_add_5)             0.00       3.77 f
+  I2/mult_134/PRODUCT[40] (FPmul_DW02_mult_0)             0.00       3.77 f
+  I2/SIG_in_reg[20]/D (DFF_X1)                            0.01       3.78 f
+  data arrival time                                                  3.78
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  I2/SIG_in_reg[20]/CK (DFF_X1)                           0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -3.78
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -3.89
+
+
+1

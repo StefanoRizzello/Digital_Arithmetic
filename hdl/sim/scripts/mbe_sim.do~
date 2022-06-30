@@ -1,0 +1,2 @@
+project compileall
+add wave -position insertpoint sim:/mbe_multiplier_tb/DUT/*

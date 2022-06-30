@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Thu Dec  9 13:28:00 2021
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                          296
+Number of nets:                          5380
+Number of cells:                         4884
+Number of combinational cells:           4219
+Number of sequential cells:               660
+Number of macros/black boxes:               0
+Number of buf/inv:                        817
+Number of references:                      42
+
+Combinational area:               4813.801949
+Buf/Inv area:                      444.486003
+Noncombinational area:            3077.353930
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  7891.155880
+Total area:                 undefined
+1

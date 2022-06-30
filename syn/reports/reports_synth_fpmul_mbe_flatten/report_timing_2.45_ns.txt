@@ -1,0 +1,152 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Thu Dec  9 19:56:38 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/SIG_in_reg[27]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[3]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_SIG_reg[3]/QN (DFF_X1)                             0.08       0.08 f
+  U2457/ZN (XNOR2_X1)                                     0.07       0.14 f
+  U2597/ZN (OR2_X1)                                       0.07       0.21 f
+  U2607/ZN (OAI22_X1)                                     0.05       0.26 r
+  U2551/ZN (XNOR2_X1)                                     0.06       0.32 r
+  U2556/ZN (XNOR2_X1)                                     0.06       0.38 r
+  U2815/Z (XOR2_X1)                                       0.07       0.45 r
+  U2814/ZN (XNOR2_X1)                                     0.07       0.53 r
+  U2693/ZN (XNOR2_X1)                                     0.07       0.59 r
+  U4794/ZN (OAI21_X1)                                     0.03       0.62 f
+  U4795/ZN (OAI21_X1)                                     0.04       0.66 r
+  U2673/Z (XOR2_X1)                                       0.07       0.73 r
+  U3418/ZN (XNOR2_X1)                                     0.06       0.79 r
+  U2865/ZN (XNOR2_X1)                                     0.06       0.86 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/B[12] (FPmul_DW01_add_4)
+                                                          0.00       0.86 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U438/ZN (NAND2_X1)
+                                                          0.03       0.89 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U440/ZN (OAI21_X1)
+                                                          0.04       0.93 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U435/ZN (AOI21_X1)
+                                                          0.03       0.96 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U445/ZN (OAI21_X1)
+                                                          0.04       1.00 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U441/ZN (AOI21_X1)
+                                                          0.03       1.02 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U442/ZN (OAI21_X1)
+                                                          0.04       1.06 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U443/ZN (AOI21_X1)
+                                                          0.03       1.09 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U444/ZN (OAI21_X1)
+                                                          0.05       1.14 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U287/ZN (AOI21_X1)
+                                                          0.03       1.17 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U483/ZN (OAI21_X1)
+                                                          0.05       1.22 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U292/ZN (AOI21_X1)
+                                                          0.03       1.25 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U482/ZN (OAI21_X1)
+                                                          0.05       1.29 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U306/ZN (AOI21_X1)
+                                                          0.03       1.33 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U464/ZN (OAI21_X1)
+                                                          0.05       1.37 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U308/ZN (AOI21_X1)
+                                                          0.03       1.40 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U449/ZN (OAI21_X1)
+                                                          0.05       1.45 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U289/ZN (AOI21_X1)
+                                                          0.03       1.48 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U481/ZN (OAI21_X1)
+                                                          0.05       1.53 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U295/ZN (AOI21_X1)
+                                                          0.03       1.56 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U480/ZN (OAI21_X1)
+                                                          0.05       1.60 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U297/ZN (AOI21_X1)
+                                                          0.03       1.64 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U463/ZN (OAI21_X1)
+                                                          0.05       1.68 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U293/ZN (AOI21_X1)
+                                                          0.03       1.71 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U455/ZN (OAI21_X1)
+                                                          0.05       1.76 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U454/ZN (AOI21_X1)
+                                                          0.03       1.79 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U462/ZN (INV_X1)
+                                                          0.03       1.83 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U269/ZN (NAND2_X1)
+                                                          0.03       1.86 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U271/ZN (NAND3_X1)
+                                                          0.04       1.90 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U239/ZN (NAND2_X1)
+                                                          0.03       1.93 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U228/ZN (NAND3_X1)
+                                                          0.04       1.97 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U262/ZN (NAND2_X1)
+                                                          0.03       2.00 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U264/ZN (NAND3_X1)
+                                                          0.04       2.03 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U280/ZN (NAND2_X1)
+                                                          0.03       2.07 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U282/ZN (NAND3_X1)
+                                                          0.04       2.11 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U222/ZN (NAND2_X1)
+                                                          0.03       2.14 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U225/ZN (NAND3_X1)
+                                                          0.03       2.17 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U428/ZN (NAND2_X1)
+                                                          0.03       2.20 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U230/ZN (NAND3_X1)
+                                                          0.04       2.24 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U251/ZN (NAND2_X1)
+                                                          0.03       2.28 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U234/ZN (NAND3_X1)
+                                                          0.03       2.31 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U257/ZN (NAND2_X1)
+                                                          0.03       2.34 f
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U258/ZN (NAND3_X1)
+                                                          0.03       2.37 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/U384/ZN (XNOR2_X1)
+                                                          0.05       2.42 r
+  I2/MBE_multiplier_1/dadda_tree_imp/add_1465/SUM[47] (FPmul_DW01_add_4)
+                                                          0.00       2.42 r
+  I2/SIG_in_reg[27]/D (DFF_X1)                            0.01       2.43 r
+  data arrival time                                                  2.43
+
+  clock MY_CLK (rise edge)                                2.45       2.45
+  clock network delay (ideal)                             0.00       2.45
+  clock uncertainty                                      -0.07       2.38
+  I2/SIG_in_reg[27]/CK (DFF_X1)                           0.00       2.38 r
+  library setup time                                     -0.03       2.35
+  data required time                                                 2.35
+  --------------------------------------------------------------------------
+  data required time                                                 2.35
+  data arrival time                                                 -2.43
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+1

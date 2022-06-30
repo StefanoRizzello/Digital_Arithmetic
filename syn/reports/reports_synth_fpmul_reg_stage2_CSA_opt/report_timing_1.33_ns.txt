@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Dec  7 23:11:39 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MY_CLK_r_REG73_S5
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: MY_CLK_r_REG39_S6
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MY_CLK_r_REG73_S5/CK (DFF_X1)                           0.00       0.00 r
+  MY_CLK_r_REG73_S5/Q (DFF_X1)                            0.09       0.09 r
+  I3/I11/add_45/A[10] (FPmul_DW01_inc_0)                  0.00       0.09 r
+  I3/I11/add_45/U1_1_10/CO (HA_X1)                        0.06       0.15 r
+  I3/I11/add_45/U1_1_11/CO (HA_X1)                        0.06       0.22 r
+  I3/I11/add_45/U1_1_12/CO (HA_X1)                        0.06       0.28 r
+  I3/I11/add_45/U1_1_13/CO (HA_X1)                        0.06       0.34 r
+  I3/I11/add_45/U1_1_14/CO (HA_X1)                        0.06       0.40 r
+  I3/I11/add_45/U1_1_15/CO (HA_X1)                        0.06       0.46 r
+  I3/I11/add_45/U1_1_16/CO (HA_X1)                        0.06       0.52 r
+  I3/I11/add_45/U1_1_17/CO (HA_X1)                        0.06       0.58 r
+  I3/I11/add_45/U1_1_18/CO (HA_X1)                        0.06       0.64 r
+  I3/I11/add_45/U1_1_19/CO (HA_X1)                        0.06       0.71 r
+  I3/I11/add_45/U1_1_20/CO (HA_X1)                        0.06       0.77 r
+  I3/I11/add_45/U1_1_21/CO (HA_X1)                        0.06       0.83 r
+  I3/I11/add_45/U1_1_22/CO (HA_X1)                        0.06       0.89 r
+  I3/I11/add_45/U1_1_23/CO (HA_X1)                        0.05       0.94 r
+  I3/I11/add_45/SUM[24] (FPmul_DW01_inc_0)                0.00       0.94 r
+  U206/ZN (AND2_X1)                                       0.05       0.99 r
+  U361/ZN (AND2_X1)                                       0.05       1.04 r
+  U360/ZN (AND2_X1)                                       0.05       1.09 r
+  U359/ZN (AND2_X1)                                       0.05       1.13 r
+  U358/ZN (AND2_X1)                                       0.04       1.18 r
+  U357/ZN (AND2_X1)                                       0.04       1.22 r
+  MY_CLK_r_REG39_S6/D (DFF_X1)                            0.01       1.23 r
+  data arrival time                                                  1.23
+
+  clock MY_CLK (rise edge)                                1.33       1.33
+  clock network delay (ideal)                             0.00       1.33
+  clock uncertainty                                      -0.07       1.26
+  MY_CLK_r_REG39_S6/CK (DFF_X1)                           0.00       1.26 r
+  library setup time                                     -0.03       1.23
+  data required time                                                 1.23
+  --------------------------------------------------------------------------
+  data required time                                                 1.23
+  data arrival time                                                 -1.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
